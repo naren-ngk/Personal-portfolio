@@ -4,10 +4,12 @@
     flex-direction: row;
     justify-content: center;
     margin: 0 5rem;
+    position: relative;
 }
 
 .titles {
     flex: 1;
+    width: 100%;
     align-self: center;
     font-family: 'Titillium Web', sans-serif;
 }
@@ -50,5 +52,232 @@
 }
 
 .pictures {
-    flex: 1
+    display: flex;
+    position: relative;
+    flex: 1;
+    height: 100%;
+}
+
+.cursor {
+    font-size: 55px;
+    font-weight: 600;
+    background: #fff;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.laptop-lottie {
+    position: absolute;
+    align-self: center;
+    height: 600px;
+    width: 600px;
+}
+
+.resume-wrapper {
+    margin-top: 25px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.resume-button {
+    width: 120px;
+    padding: 13px;
+    border: none;
+    outline: none;
+    background-color: #37BDCF;
+    border-radius: 25px;
+    font-size: 20px;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.slider-container {
+    position: absolute;
+    font-family: 'Titillium Web', sans-serif;
+    width: 100%;
+    bottom: 6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider {
+    width: 25px;
+    height: 40px;
+    border: 4px solid rgba(255, 255, 255, 0.85);
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.slider-ball {
+    width: 7px;
+    height: 7px;
+    background-color: rgba(255, 255, 255, 0.85);
+    border-radius: 50%;
+    margin: 2px 0;
+}
+
+.swipe-text {
+    margin-top: 7px;
+    color: white;
+    font-size: 15px;
+    animation: swiper 2s infinite;
+}
+
+@keyframes swiper {
+    0%, 100% {
+        opacity: 1;
+        ;
+    }
+
+    50% {
+        opacity: 0.35;
+        ;
+    }
+}
+
+@media only screen and (max-width: 1270px) {
+    .titles h2 {
+        font-size: 40px;
+    }
+
+    .titles h4 {
+        font-size: 27px;
+    }
+
+    .name {
+        font-size: 45px;
+    }
+
+    .typewriting {
+        font-size: 35px;
+    }
+
+    .cursor {
+        font-size: 40px;
+    }
+    .laptop-lottie {
+        height: 500px;
+        width: 500px;
+    }
+}
+
+@media only screen and (max-width: 1090px) {
+    .hero-container{
+        margin: 0 3rem;
+    }
+    .titles h2 {
+        font-size: 30px;
+    }
+
+    .titles h4 {
+        font-size: 23px;
+    }
+
+    .name {
+        font-size: 40px;
+    }
+
+    .typewriting {
+        font-size: 30px;
+    }
+
+    .cursor {
+        font-size: 38px;
+    }
+
+    .laptop-lottie {
+        height: 450px;
+        width: 450px;
+    }
+
+    .resume-button {
+        width: 100px;
+        padding: 10px;
+        font-size: 17px;
+    }
+}
+
+@media only screen and (max-width: 930px) {
+    .hero-container {
+        flex-direction: column;
+    }
+
+    .titles {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .titles h2 {
+        font-size: 55px;
+    }
+
+    .titles h4 {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 65px;
+    }
+
+    .typewriting {
+        font-size: 47px;
+    }
+
+    .cursor {
+        font-size: 55px;
+    }
+
+    .resume-button {
+        width: 150px;
+        padding: 17px;
+        font-size: 22px;
+    }
+
+    .pictures{
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin: auto;
+    }
+
+    .laptop-lottie {
+        height: 550px;
+        width: 500px;
+    }
+
+    .slider-container{
+        bottom: 3%;
+    }
+}
+
+@media only screen and (max-width: 630px) {
+    .titles h2 {
+        font-size: 50px;
+    }
+
+    .titles h4 {
+        font-size: 30px;
+    }
+
+    .name {
+        font-size: 60px;
+    }
+
+    .typewriting {
+        font-size: 45px;
+    }
+
+    .cursor {
+        font-size: 50px;
+    }
 }

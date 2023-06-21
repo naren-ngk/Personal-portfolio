@@ -1,3 +1,4 @@
-import logo from './logo.svg';
+import logo from './svg/logo.svg';
+import laptopAnimationData from './laptop.json';
 
-export { logo };
+export { logo, laptopAnimationData };
