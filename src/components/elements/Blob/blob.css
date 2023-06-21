@@ -20,7 +20,14 @@
 
 @media only screen and (max-width: 768px) {
     .blob {
-        height: 550px;
+        height: 500px;
         width: 500px;
+    }
+}
+
+@media only screen and (max-width: 680px) {
+    .blob {
+        height: 450px;
+        width: 450px;
     }
 }

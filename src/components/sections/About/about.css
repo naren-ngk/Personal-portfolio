@@ -1,0 +1,209 @@
+.about-section {
+    height: 100vh;
+    background: linear-gradient(270deg, #050816 1.16%, #050816 53.16%, #050816 100%);
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.about-titles {
+    margin: 2rem 0 0 5rem;
+    color: white;
+}
+
+.about-titles h2 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.about-titles h4 {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 35px;
+    color: rgba(255, 255, 255, 0.76);
+}
+
+.about-wrapper {
+    display: flex;
+    margin: 0 5rem;
+    height: 100%;
+}
+
+@keyframes flipper {
+    0%, 100% {
+        opacity: 1;
+        ;
+    }
+
+    50% {
+        opacity: 0.35;
+        ;
+    }
+}
+
+.profile-picture {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.about-description {
+    flex: 1;
+    color: rgb(255, 255, 255);
+    align-self: center;
+}
+
+.about-text {
+    position: relative;
+}
+
+.about-text section {
+    position: relative;
+    background: rgba(255, 255, 255, 0.18);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    padding: 2rem;
+    margin: 0 2rem;
+    z-index: 2;
+}
+
+.about-text p {
+    font-weight: 600;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.sphere {
+    position: absolute;
+    height: 300px;
+    width: 300px;
+}
+
+.purpleSphere {
+    top: 20%;
+    left: 50%;
+    animation: purpleRotation 10s infinite linear;
+}
+
+.blueSphere {
+    bottom: 45%;
+    left: 5%;
+    animation: blueRotation 10s infinite linear;
+}
+
+@keyframes purpleRotation {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(360deg);
+    }
+}
+
+@keyframes blueRotation {
+    0% {
+        transform: rotateZ(0deg);
+    }
+
+    100% {
+        transform: rotateZ(-360deg);
+    }
+}
+
+@media only screen and (max-width: 1340px) {
+    .sphere {
+        height: 230px;
+        width: 230px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .about-text section {
+        padding: 1.5rem;
+    }
+
+    .about-titles h2 {
+        font-weight: 600;
+        font-size: 45px;
+        line-height: 45px;
+    }
+    
+    .about-titles h4 {
+        font-size: 13px;
+        line-height: 30px;
+    }
+}
+
+@media only screen and (max-width: 1100px) {
+    .sphere {
+        height: 220px;
+        width: 220px;
+    }
+
+    .about-text p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+
+    .about-text section {
+        padding: 1.5rem;
+    }
+}
+
+@media only screen and (max-width: 860px) {
+    .about-wrapper {
+        display: flex;
+        flex-direction: column;
+        margin: 0 3rem;
+    }
+
+    .about-description {
+        display: flex;
+    }
+
+    .about-text {
+        align-self: center;
+        width: 550px;
+    }
+
+    .sphere {
+        height: 200px;
+        width: 200px;
+    }
+
+    .blueSphere{
+        left:-5%;
+        top: -20%;
+    }
+
+    .purpleSphere{
+        left: 65%;
+        top: 35%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .sphere {
+        height: 180px;
+        width: 180px;
+    }
+
+    .about-text p {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .purpleSphere{
+        left: 68%;
+        top: 50%;
+    }
+}
