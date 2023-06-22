@@ -7,19 +7,25 @@ import './whatIdo.css';
 function WhatIdo() {
     const [iconNumber, setIconNumber] = useState(0);
 
-    const handleH2Hover = (event) => {
-        if (event.target.id.slice(2) % 2 === 0) {
+    const handleH2Enter = (event) => {
+        if (event.target.id.slice(3) % 2 === 0) {
             event.target.classList.add('even-h2');
-            event.target.classList.remove('odd-h2');
         } else {
             event.target.classList.add('odd-h2');
+        }
+    };
+
+    const handleH2Leave = (event) => {
+        if (event.target.id.slice(3) % 2 === 0) {
             event.target.classList.remove('even-h2');
+        } else {
+            event.target.classList.remove('odd-h2');
         }
     };
 
     const handleH2Click = (event) => {
-        setIconNumber(event.target.id.slice(2));
-        event.target.classList.add(`h2-${iconNumber}`);
+        setIconNumber(event.target.id.slice(3));
+        event.target.classList.add(`h2-${event.target.id.slice(3)}`);
     }
 
     return (
@@ -30,8 +36,8 @@ function WhatIdo() {
             <div className='what-wrapper'>
                 <div className='what-titles'>
                     {whatIDoTitles.map(title => (
-                        <motion.h2 id={`h2-${title.id}`} onClick={handleH2Click}
-                            onMouseEnter={handleH2Hover} onMouseLeave={handleH2Hover}
+                        <motion.h2 id={`h2-${title.id}`} onClick={handleH2Click} 
+                            onMouseEnter={handleH2Enter} onMouseLeave={handleH2Leave}
                             className='what-single-title'
                             whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.8 }}
                         >
