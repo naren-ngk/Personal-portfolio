@@ -1,0 +1,93 @@
+.what-section {
+    height: 100vh;
+    background: linear-gradient(270deg, #161924 1.16%, #212329 53.16%, #28292c 100%);
+    font-family: 'Titillium Web', sans-serif;
+    display: flex;
+    flex-direction: column;
+}
+
+.what-heading {
+    color: #FFF;
+    font-size: 55px;
+    font-weight: 700;
+    line-height: 55px;
+    margin: 2rem 0 0 5rem;
+}
+
+.what-wrapper {
+    display: flex;
+    height: 100%;
+}
+
+.what-titles {
+    flex: 1;
+    align-self: center;
+    margin-left: 7rem;
+}
+
+.what-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+.lottie-title-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 600px;
+}
+
+.what-single-title {
+    width: fit-content;
+    font-size: 60px;
+    font-weight: 700;
+    color: transparent;
+    -webkit-text-stroke: 1px white;
+    cursor: pointer;
+    transition: background 1s ease-in-out;
+}
+
+/* .what-single-title:hover {
+    background: linear-gradient(#EFEEEE, #CDCDCD);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+} */
+
+.h2-0 {
+    background: linear-gradient(270deg, rgba(47, 54, 228, 1), rgba(117, 56, 194, 1), rgba(39, 80, 225, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+}
+
+.h2-1 {
+    background: linear-gradient(270deg, #A5FA50 0%, #65E7A1 53.5%, #1EEED5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+}
+
+.h2-2 {
+    background: linear-gradient(270deg, rgba(47, 54, 228, 1), rgba(117, 56, 194, 1), rgba(39, 80, 225, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+}
+
+.h2-3 {
+    background: linear-gradient(270deg, #A5FA50 0%, #65E7A1 53.5%, #1EEED5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+}
+
+.h2-4 {
+    background: linear-gradient(270deg, rgba(47, 54, 228, 1), rgba(117, 56, 194, 1), rgba(39, 80, 225, 1));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 0px transparent;
+}
