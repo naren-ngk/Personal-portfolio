@@ -54,6 +54,7 @@ function WhatIdo() {
                     <p className='whatido-text'>Click any title!</p>
                 </div>
                 <div className='what-icons'>
+                    <div className='icon-blob' />
                     {whatIDoTitles.map(title => {
                         if (title.id === iconNumber) {
                             return (

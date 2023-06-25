@@ -1,0 +1,81 @@
+.skillcard-container {
+    height: 130px;
+    width: 130px;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.skillcard {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    position: relative;
+    user-select: none;
+    cursor: pointer;
+}
+
+.skillcard-front,
+.skillcard-back {
+    height: 100%;
+    width: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.skillcard-back {
+    transform: rotateY(180deg);
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(1.2px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    border-radius: 50%;
+}
+
+.skillcard-front {
+    overflow: hidden;
+    background: rgba(255, 255, 255, 0.14);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(1.2px);
+    -webkit-backdrop-filter: blur(1.2px);
+    border: 1px solid rgba(255, 255, 255, 0.41);
+    border-radius: 50%;
+}
+
+.skillcard-front::before, .skillcard-back::before {
+    content: '';
+    position: absolute;
+    background-color: rgba(218, 218, 218, 0.5);
+    height: 400px;
+    width: 10px;
+    left: -100px;
+    transform: skewX(-30deg);
+}
+
+.skillcard-front:hover:before, .skillcard-back:hover:before {
+    animation: slide 1s;
+    z-index: 1;
+}
+
+.tech-icon {
+    object-fit: contain;
+    height: 50px;
+    width: 50px;
+    user-drag: none;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+
+.back-icon {
+    transform: rotateY(180deg);
+}

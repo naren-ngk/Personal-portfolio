@@ -1,0 +1,23 @@
+.skills-section {
+    background: linear-gradient(270deg, #050816 1.16%, #050816 53.16%, #050816 100%);
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5rem;
+    color: #fff;
+}
+
+.skills-title {
+    margin-bottom: 2.5rem;
+}
+
+.skills-title h2 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.skills-techs{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
