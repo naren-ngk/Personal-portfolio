@@ -7,6 +7,9 @@
 
 .skills-title {
     margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 .skills-title h2 {
@@ -15,9 +18,45 @@
     line-height: 55px;
 }
 
-.skills-techs{
+.skills-techs {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+}
+
+.dropdown-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.back-btn {
+    background-image: linear-gradient(to right, #DA22FF 0%, #9733EE 51%, #DA22FF 100%);
+    margin: 10px;
+    height: calc(30px + 2 * 0.5rem);
+    padding: 0.5rem 1rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    transition: 0.5s;
+    background-size: 200% auto;
+    font-size: 20px;
+    color: white;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.back-btn:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dragger {
+    margin-top: 2rem;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+    animation: swiper 2s infinite;
 }

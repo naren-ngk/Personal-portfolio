@@ -66,53 +66,66 @@ export const technologies = [
     {
         name: "HTML 5",
         icon: html,
+        type: 'Frontend'
     },
     {
         name: "CSS 3",
         icon: css,
+        type: 'Frontend'
     },
     {
         name: "JavaScript",
         icon: javascript,
+        type: 'Frontend'
     },
     {
         name: "TypeScript",
         icon: typescript,
+        type: 'Frontend'
     },
     {
         name: "React JS",
         icon: reactjs,
+        type: 'Frontend'
     },
     {
         name: "Redux Toolkit",
         icon: redux,
+        type: 'Frontend'
     },
     {
         name: "Tailwind CSS",
         icon: tailwind,
+        type: 'Frontend'
     },
     {
         name: "Node JS",
         icon: nodejs,
+        type: 'Backend'
     },
     {
         name: "MongoDB",
         icon: mongodb,
+        type: 'Backend'
     },
     {
         name: "Three JS",
         icon: threejs,
+        type: 'Frontend'
     },
     {
         name: "git",
         icon: git,
+        type: 'Other'
     },
     {
         name: "figma",
         icon: figma,
+        type: 'Design'
     },
     {
         name: "docker",
         icon: docker,
+        type: 'Other'
     },
 ];
