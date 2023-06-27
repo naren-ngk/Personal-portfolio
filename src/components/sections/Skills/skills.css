@@ -60,3 +60,65 @@
     font-size: 15px;
     animation: swiper 2s infinite;
 }
+
+.progerss-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+.progerss-container h3 {
+    width: 65%;
+    display: flex;
+    font-size: 25px;
+    font-weight: 400;
+    align-items: center;
+    padding: 0 0 0 1rem;
+    margin-bottom: 1rem;
+}
+
+.progerss-container span {
+    font-size: 33px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #7C1BDE 8.83%, rgba(232, 68, 225, 0.85) 65.53%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.progress-wrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.progress-wrapper h2 {
+    align-self: center;
+    margin: 0 1rem;
+    font-size: 30px;
+    background: linear-gradient(-225deg, #14e0ff 0%, #1D8FE1 48%, #625EB1 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.progress-bar {
+    background: rgba(255, 255, 255, 0.171);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    border-radius: 100px;
+    padding: 0 5px;
+    height: 40px;
+    width: 65%;
+}
+
+.progress-value {
+    border-radius: 100px;
+    background: linear-gradient(270deg, #A5FA50 0%, #65E7A1 53.5%, #1EEED5 100%);
+    height: 30px;
+}

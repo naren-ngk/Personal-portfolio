@@ -45,13 +45,13 @@ function Dropdown({ options, value, onChange }) {
     }
 
     const renderedOptions = options.map(option => {
-        return <div className="single-option" key={option} onClick={() => handleOptionClick(option)}>{option}</div>
+        return <div className="single-option" key={option.name} onClick={() => handleOptionClick(option)}>{option.name}</div>
     });
 
     return (
         <div ref={divEl} className="dropdown-box">
             <div className="dropdown-container panel"
-                onClick={handleClick}>{value || 'Filter...'}
+                onClick={handleClick}>{value?.name || 'Filter...'}
                 <GoChevronDown className="drop-icon" />
             </div>
             {isOpen && <motion.div

@@ -2,13 +2,19 @@ import { useState } from 'react';
 import { SkillCard } from '../../elements';
 import { technologies } from '../../../constants';
 import { Dropdown } from '../../elements';
+import { motion } from 'framer-motion';
 import './skills.css';
 
 function Skills() {
     const [selection, setSelection] = useState(null);
     const [isFiltered, setIsFiltered] = useState(false);
 
-    const options = ['Frontend', , 'Backend', 'Design', 'Other'];
+    const options = [
+        { name: 'Frontend', progress: 95 },
+        { name: 'Backend', progress: 85 },
+        { name: 'Design', progress: 80 },
+        { name: 'Other', progress: 85 },
+    ];
 
     const handleSelect = (option) => {
         setSelection(option);
@@ -17,10 +23,10 @@ function Skills() {
 
     const handleClear = () => {
         setSelection(null);
-        setIsFiltered(false)
+        setIsFiltered(false);
     }
 
-    const filteredTech = technologies.filter(tech => (tech.type === selection));
+    const filteredTech = technologies.filter(tech => (tech.type === selection?.name));
 
     return (
         <div className='skills-section'>
@@ -44,6 +50,27 @@ function Skills() {
                     )
                 }
             </div>
+            {isFiltered ? (
+                <div className='progerss-container'>
+                    <h3>My expertise in<span>&nbsp;{selection.name}&nbsp;</span>skills</h3>
+                    <div className='progress-wrapper'>
+                        <div className="progress-bar">
+                            <motion.div
+                                key={selection.progress}
+                                className="progress-value"
+                                animate={{ width: `${selection.progress}%` }}
+                                transition={{ duration: 1 }}
+                            ></motion.div>
+                        </div>
+                        <div>
+                            <h2>{`${selection.progress}%`}</h2>
+                        </div>
+                    </div>
+                </div>
+            ) : (
+                    <></>
+                )
+            }
             <p className='dragger'>Click or drag any title</p>
         </div>
     );
