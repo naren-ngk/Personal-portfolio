@@ -39,6 +39,7 @@ function WhatIdo() {
         <div className='what-section'>
             <div className='what-heading'>
                 <p>What I do?</p>
+                <div className='title-line'></div>
             </div>
             <div className='what-wrapper'>
                 <div className='what-titles'>

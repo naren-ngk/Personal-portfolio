@@ -1,6 +1,6 @@
 import './Dropdown.css';
 import { useState, useEffect, useRef } from 'react';
-import { GoChevronDown } from 'react-icons/go';
+import { GoChevronDown, GoChevronUp } from 'react-icons/go';
 import { motion } from 'framer-motion';
 
 function Dropdown({ options, value, onChange }) {
@@ -52,7 +52,7 @@ function Dropdown({ options, value, onChange }) {
         <div ref={divEl} className="dropdown-box">
             <div className="dropdown-container panel"
                 onClick={handleClick}>{value?.name || 'Filter...'}
-                <GoChevronDown className="drop-icon" />
+                {isOpen ? <GoChevronUp className="drop-icon" /> : <GoChevronDown className="drop-icon" />}
             </div>
             {isOpen && <motion.div
                 key={value} variants={variants} animate={'show'} initial="hide"

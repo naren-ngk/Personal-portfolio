@@ -23,22 +23,20 @@ import tailwind from "./tech/tailwind.png";
 import typescript from "./tech/typescript.png";
 import threejs from "./tech/threejs.png";
 
+import CEGConfum from './images/CEGConfum.png'
+import BlogSpot from './images/BlogSpot.png'
+import DallE from './images/Dall-E.png'
+import portfolio3d from './images/portfolio3d.png';
+
 export {
     logo, qrCode, purpleSphere, blueSphere, laptopAnimationData,
     studentAnimationData, reactjsAnimationData, nodejsAnimationData,
     webDesignAnimationData, fullStackAnimationData,
 
-    css,
-    docker,
-    figma,
-    git,
-    html,
-    javascript,
-    mongodb,
-    nodejs,
-    reactjs,
-    redux,
-    tailwind,
-    typescript,
-    threejs,
+    css, docker, figma, git,
+    html, javascript, mongodb, nodejs,
+    reactjs, redux, tailwind,
+    typescript, threejs,
+
+    CEGConfum, BlogSpot, DallE, portfolio3d
 };

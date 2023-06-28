@@ -8,6 +8,7 @@ function About() {
             <div className='about-titles'>
                 <h2>About Me</h2>
                 <h4>Overview of my skills and interests</h4>
+                <div className='title-line'></div>
             </div>
             <div className='about-wrapper' >
                 <div className='profile-picture'>

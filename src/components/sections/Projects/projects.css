@@ -1,0 +1,34 @@
+.projects-wrapper {
+    background: linear-gradient(270deg, #0e0f14 1.16%, #131416 53.16%, #121316 100%);
+    font-family: 'Titillium Web', sans-serif;
+    padding: 5rem;
+    color: #fff;
+}
+
+.title-line {
+    width: 75px;
+    height: 5px;
+    background: linear-gradient(270deg, #7C1BDE 8.83%, rgba(232, 68, 225, 0.85) 65.53%);
+    margin: 0.75rem 0 0 4rem;
+    border-radius: 20px;
+}
+
+.project-title {
+    margin-bottom: 2.5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-title h2 {
+    font-weight: 700;
+    font-size: 55px;
+    line-height: 55px;
+}
+
+.projects-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
