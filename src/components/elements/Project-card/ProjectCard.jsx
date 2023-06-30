@@ -7,7 +7,7 @@ function ProjectCard({ project }) {
             whileHover={{ x: 15, y: -10 }}
             className='projectcard-container'>
             <div className='projectCard-img'>
-                <img src={project.thumbnail} />
+                <img src={project.thumbnail} alt={project.name} />
             </div>
             <div className='projectCard-title'>
                 <h4>{project.name}</h4>
