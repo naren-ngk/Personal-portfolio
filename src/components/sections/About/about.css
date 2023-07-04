@@ -73,10 +73,11 @@
     z-index: 2;
 }
 
-.about-text p {
+.about-text li {
     font-weight: 600;
     font-size: 22px;
     line-height: 27px;
+    margin-bottom: 0.25rem;
 }
 
 .sphere {
@@ -86,7 +87,7 @@
 }
 
 .purpleSphere {
-    top: 20%;
+    top: 30%;
     left: 50%;
     animation: purpleRotation 10s infinite linear;
 }

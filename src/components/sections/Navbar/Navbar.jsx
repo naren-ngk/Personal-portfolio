@@ -32,7 +32,7 @@ function Navbar() {
 
     return (
         <header className={navbar ? 'navbar active' : 'navbar'}>
-            <h3>
+            <h3 onClick={() => { window.scrollTo(0, 0) }}>
                 <img src={logo} alt='logo' className='nav-logo' />
             </h3>
             <nav ref={navRef}>

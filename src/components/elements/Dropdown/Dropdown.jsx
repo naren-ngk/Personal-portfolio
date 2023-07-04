@@ -2,6 +2,7 @@ import './Dropdown.css';
 import { useState, useEffect, useRef } from 'react';
 import { GoChevronDown, GoChevronUp } from 'react-icons/go';
 import { motion } from 'framer-motion';
+import { dropDownVariants } from '../../../utils/motions';
 
 function Dropdown({ options, value, onChange }) {
     const [isOpen, setIsOpen] = useState(false);
@@ -19,21 +20,6 @@ function Dropdown({ options, value, onChange }) {
             document.removeEventListener('click', handler);
         };
     }, []);
-
-    const variants = {
-        show: {
-            opacity: 1,
-            y: 0,
-            transition: {
-                ease: 'easeInOut',
-                duration: 0.15
-            }
-        },
-        hide: {
-            y: -20,
-            opacity: 0,
-        }
-    };
 
     const handleClick = () => {
         setIsOpen((currentIsOpen) => !currentIsOpen);
@@ -55,7 +41,7 @@ function Dropdown({ options, value, onChange }) {
                 {isOpen ? <GoChevronUp className="drop-icon" /> : <GoChevronDown className="drop-icon" />}
             </div>
             {isOpen && <motion.div
-                key={value} variants={variants} animate={'show'} initial="hide"
+                key={value} variants={dropDownVariants} animate={'show'} initial="hide"
                 className="options-bar panel">{renderedOptions}</motion.div>}
         </div>
     );
