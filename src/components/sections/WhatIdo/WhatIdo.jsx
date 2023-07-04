@@ -2,6 +2,7 @@ import { useState, useRef, useEffect } from 'react';
 import Lottie from 'lottie-react';
 import { whatIDoTitles } from '../../../constants';
 import { motion } from 'framer-motion';
+import { slideIn, textVariant } from '../../../utils/motions';
 import './whatIdo.css';
 
 function WhatIdo() {
@@ -37,12 +38,15 @@ function WhatIdo() {
 
     return (
         <div className='what-section'>
-            <div className='what-heading'>
+            <motion.div className='what-heading' variants={textVariant()}
+                initial='hidden' whileInView="show" viewport={{ once: true }}>
                 <p>What I do?</p>
                 <div className='title-line'></div>
-            </div>
+            </motion.div>
             <div className='what-wrapper'>
-                <div className='what-titles'>
+                <motion.div className='what-titles'
+                    initial='hidden' whileInView="show" viewport={{ once: true }}
+                    variants={slideIn('left', 'tween', 0.2, 1)}>>
                     {whatIDoTitles.map(title => (
                         <motion.h2 id={`h2-${title.id}`} onClick={handleH2Click}
                             onMouseEnter={handleH2Enter} onMouseLeave={handleH2Leave}
@@ -53,8 +57,10 @@ function WhatIdo() {
                         </motion.h2>
                     ))}
                     <p className='whatido-text'>Click any title!</p>
-                </div>
-                <div className='what-icons'>
+                </motion.div>
+                <motion.div className='what-icons'
+                    initial='hidden' whileInView="show" viewport={{ once: true }}
+                    variants={slideIn('right', 'tween', 0.2, 1)}>>
                     <div className='icon-blob' />
                     {whatIDoTitles.map(title => {
                         if (title.id === iconNumber) {
@@ -67,7 +73,7 @@ function WhatIdo() {
                             return null;
                         }
                     })}
-                </div>
+                </motion.div>
             </div>
         </div>
     );

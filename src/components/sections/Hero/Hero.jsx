@@ -3,13 +3,16 @@ import Lottie from 'lottie-react';
 import { Blob } from '../../elements';
 import { laptopAnimationData } from '../../../assets';
 import { motion } from 'framer-motion';
+import { textVariant } from '../../../utils/motions';
 import './hero.css';
 
 function Hero() {
     return (
         <div>
             <div className='hero-container'>
-                <div className='titles'>
+                <span id='home'></span>
+                <motion.div className='titles' initial='hidden' whileInView="show"
+                    viewport={{ once: true }} variants={textVariant()}>
                     <h2>Hi, I am <span className='name'>Narendran</span></h2>
                     <h4>I am currently a</h4>
                     <div className='typewriting'>
@@ -42,13 +45,14 @@ function Hero() {
                             whileTap={{ scale: 0.8 }}
                         >Resume</motion.button>
                     </div>
-                </div>
-                <div className='pictures'>
+                </motion.div>
+                <motion.div className='pictures' initial='hidden' whileInView="show"
+                    viewport={{ once: true }} variants={textVariant()}>
                     <Blob />
                     <div className='laptop-lottie'>
                         <Lottie animationData={laptopAnimationData} />
                     </div>
-                </div>
+                </motion.div>
                 <div className='slider-container'>
                     <a href='#about'>
                         <div className='slider'>

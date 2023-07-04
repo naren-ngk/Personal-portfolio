@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { motion } from 'framer-motion';
+import { slideIn, textVariant } from '../../../utils/motions';
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
@@ -41,11 +42,14 @@ function Contact() {
 
     return (
         <div className="contact-container">
-            <div className='form-heading'>
+            <span id='contact'></span>
+            <motion.div className='form-heading' initial='hidden'
+                whileInView="show" viewport={{ once: true }} variants={textVariant()}>
                 <h3>Contact Me</h3>
                 <div className='title-line'></div>
-            </div>
-            <div className='contact-wrapper'>
+            </motion.div>
+            <motion.div className='contact-wrapper' initial='hidden' whileInView="show"
+                viewport={{ once: true }} variants={slideIn('left', 'tween', 0.2, 1)}>
                 <form className='contact-form' onSubmit={handleSubmit}>
                     <div className='form-gradient'></div>
                     <h2>Send me a message</h2>
@@ -79,7 +83,7 @@ function Contact() {
                     </motion.button>
                 </form>
                 <p className='span-msg'>{spanMessage}</p>
-            </div>
+            </motion.div>
         </div>
     );
 }
