@@ -32,3 +32,32 @@
     align-items: center;
     flex-wrap: wrap;
 }
+
+.gitButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 4rem;
+}
+
+.gitButton button {
+    background: linear-gradient(to right,  #65E7A1 0%, #1EEED5 53.5%, #A5FA50 100%);
+    padding: 1rem 2.5rem;
+    outline: none;
+    border: none;
+    text-align: center;
+    background-size: 200% auto;
+    font-size: 25px;
+    font-weight: 400;
+    color: rgb(255, 255, 255);
+    transition: 0.2s;
+    border-radius: 10px;
+    display: block;
+    cursor: pointer;
+}
+
+.gitButton button:hover {
+    background-position: right center;
+    color: #fff;
+    text-decoration: none;
+}

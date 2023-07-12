@@ -46,7 +46,7 @@ function WhatIdo() {
             <div className='what-wrapper'>
                 <motion.div className='what-titles'
                     initial='hidden' whileInView="show" viewport={{ once: true }}
-                    variants={slideIn('left', 'tween', 0.2, 1)}>>
+                    variants={slideIn('left', 'tween', 0.2, 1)}>
                     {whatIDoTitles.map(title => (
                         <motion.h2 id={`h2-${title.id}`} onClick={handleH2Click}
                             onMouseEnter={handleH2Enter} onMouseLeave={handleH2Leave}
@@ -60,7 +60,7 @@ function WhatIdo() {
                 </motion.div>
                 <motion.div className='what-icons'
                     initial='hidden' whileInView="show" viewport={{ once: true }}
-                    variants={slideIn('right', 'tween', 0.2, 1)}>>
+                    variants={slideIn('right', 'tween', 0.2, 1)}>
                     <div className='icon-blob' />
                     {whatIDoTitles.map(title => {
                         if (title.id === iconNumber) {
