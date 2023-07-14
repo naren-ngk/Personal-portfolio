@@ -1,10 +1,17 @@
-import { FlipProfileCard } from '../../elements';
+import { useState } from 'react';
+import { ProfileCard } from '../../elements';
 import { purpleSphere, blueSphere } from '../../../assets';
 import { motion } from 'framer-motion';
 import { slideIn, textVariant } from '../../../utils/motions';
 import './about.css';
 
 function About() {
+    const [cardClick, setCardClick] = useState(true);
+
+    const flipText = () => {
+        setCardClick(!cardClick);
+    }
+
     return (
         <div className='about-section'>
             <span id='about'></span>
@@ -19,7 +26,10 @@ function About() {
                 <motion.div className='profile-picture'
                     initial='hidden' whileInView="show" viewport={{ once: true }}
                     variants={slideIn('left', 'tween', 0.2, 1)}>
-                    <FlipProfileCard />
+                    <div onClick={flipText}>
+                        <ProfileCard />
+                    </div>
+                    <p className='flip-text'>{cardClick ? 'Click to flip!' : 'Scan the QR to reach me!'}</p>
                 </motion.div>
                 <motion.div className='about-description'
                     initial='hidden' whileInView="show" viewport={{ once: true }}

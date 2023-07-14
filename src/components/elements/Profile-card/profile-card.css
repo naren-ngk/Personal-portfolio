@@ -1,3 +1,9 @@
+.flippable-card-container {
+    height: 350px;
+    width: 350px;
+    perspective: 1000px;
+}
+
 .card {
     height: 100%;
     width: 100%;
@@ -21,8 +27,6 @@
 
 .card-back {
     transform: rotateY(180deg);
-    height: 350px;
-    width: 350px;
     background: linear-gradient(#313131, #313131) padding-box,
         linear-gradient(to right, rgb(185, 185, 185), rgb(141, 141, 141)) border-box;
     border-radius: 50em;
@@ -38,13 +42,7 @@
     position: absolute;
     text-align: center;
     animation: flipper 2s infinite;
-    bottom: 23%;
-    left: 5%;
-}
-
-.transform-flip {
-    transform: rotateY(180deg);
-    left: 10%;
+    bottom: -10%;
 }
 
 .qrImage {
@@ -54,8 +52,6 @@
 }
 
 .card-front {
-    height: 350px;
-    width: 350px;
     background: url(../../../assets/images/profile-pic.png);
     background-size: 350px;
     box-shadow: 0px 0px 5px rgba(0, 0, 0, .0.5);

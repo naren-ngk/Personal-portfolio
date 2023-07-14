@@ -1,5 +1,5 @@
 .about-section {
-    height: 100vh;
+    padding: 2rem 0 7rem 0;
     background: linear-gradient(270deg, #050816 1.16%, #050816 53.16%, #050816 100%);
     font-family: 'Titillium Web', sans-serif;
     display: flex;
@@ -68,7 +68,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(4.1px);
     -webkit-backdrop-filter: blur(4.1px);
-    padding: 2rem;
+    padding: 2rem 3rem;
     margin: 0 2rem;
     z-index: 2;
 }
@@ -118,19 +118,15 @@
     }
 }
 
-@media only screen and (max-width: 1340px) {
+@media only screen and (max-width: 1270px) {
     .sphere {
         height: 230px;
         width: 230px;
     }
 
-    .about-text p {
+    .about-text li {
         font-size: 20px;
         line-height: 27px;
-    }
-
-    .about-text section {
-        padding: 1.5rem;
     }
 
     .about-titles h2 {
@@ -142,6 +138,16 @@
     .about-titles h4 {
         font-size: 13px;
         line-height: 30px;
+    }
+
+    .purpleSphere {
+        top: 60%;
+        left: 60%;
+    }
+    
+    .blueSphere {
+        bottom: 60%;
+        left: 5%;
     }
 }
 
