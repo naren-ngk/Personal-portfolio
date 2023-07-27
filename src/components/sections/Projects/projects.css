@@ -61,3 +61,14 @@
     color: #fff;
     text-decoration: none;
 }
+
+@media only screen and (max-width: 870px) {
+    .projects-wrapper {
+        padding: 3.5rem;
+    }
+
+    .gitButton button {
+        padding: 1rem 2rem;
+        font-size: 22px;
+    }
+}

@@ -177,6 +177,12 @@
     }
 }
 
+@media only screen and (max-width: 870px) {
+    .what-heading {
+        margin: 2rem 0 0 3rem;
+    }
+}
+
 @media only screen and (max-width: 600px) {
     .icon-blob {
         width: 100%;
