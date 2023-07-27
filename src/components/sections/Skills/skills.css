@@ -122,3 +122,40 @@
     background: linear-gradient(270deg, #A5FA50 0%, #65E7A1 53.5%, #1EEED5 100%);
     height: 30px;
 }
+
+@media only screen and (max-width: 870px) {
+    .skills-section {
+        padding: 3.5rem;
+    }
+    .skills-title h2 {
+        font-size: 50px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 731px) {
+    .skills-title {
+        flex-direction: column;
+    }
+    .dropdown-wrapper {
+        margin-top: 1.5rem;
+    }
+    .progerss-container h3 {
+        font-size: 23px;
+    }
+    .progerss-container span {
+        font-size: 30px;
+    }
+    .progress-bar {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 685px) {
+    .progerss-container h3 {
+        font-size: 23px;
+    }
+    .progerss-container span {
+        font-size: 30px;
+    }
+}

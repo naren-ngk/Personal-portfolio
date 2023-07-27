@@ -79,3 +79,15 @@
 .back-icon {
     transform: rotateY(180deg);
 }
+
+@media only screen and (max-width: 720px) {
+    .skillcard-container {
+        height: 110px;
+        width: 110px;
+        padding: 15px;
+    }
+    .tech-icon {
+        height: 45px;
+        width: 45px;
+    }
+}
