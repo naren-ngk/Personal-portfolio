@@ -33,12 +33,10 @@
 @keyframes flipper {
     0%, 100% {
         opacity: 1;
-        ;
     }
 
     50% {
         opacity: 0.35;
-        ;
     }
 }
 
@@ -151,36 +149,79 @@
     }
 }
 
-@media only screen and (max-width: 1100px) {
+@media only screen and (max-width: 1200px) {
     .sphere {
-        height: 220px;
-        width: 220px;
+        height: 210px;
+        width: 210px;
     }
 
-    .about-text p {
-        font-size: 17px;
+    .about-text li {
+        font-size: 18px;
         line-height: 22px;
     }
 
     .about-text section {
         padding: 1.5rem;
     }
+
+    .flip-text {
+        bottom: 0;
+    }
 }
 
-@media only screen and (max-width: 860px) {
+@media only screen and (max-width: 1135px) {
+    .about-text li {
+        font-size: 16px;
+        line-height: 20px;
+    }
+
+    .sphere {
+        height: 200px;
+        width: 200px;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .about-text li {
+        font-size: 13px;
+        line-height: 18px;
+    }
+
+    .sphere {
+        height: 180px;
+        width: 180px;
+    }
+
+    .purpleSphere {
+        top: 55%;
+        left: 55%;
+    }
+    
+    .blueSphere {
+        bottom: 55%;
+        left: 5%;
+    }
+}
+
+@media only screen and (max-width: 930px) {
     .about-wrapper {
-        display: flex;
         flex-direction: column;
-        margin: 0 3rem;
+        margin: 2.5rem 3rem 0 3rem;
     }
 
     .about-description {
         display: flex;
+        margin-top: 3.5rem;
     }
 
     .about-text {
         align-self: center;
         width: 550px;
+    }
+
+    .about-text li {
+        font-size: 20px;
+        line-height: 27px;
     }
 
     .sphere {
@@ -189,13 +230,23 @@
     }
 
     .blueSphere{
-        left:-5%;
-        top: -20%;
+        left: -10%;
+        top: -22%;
     }
 
     .purpleSphere{
-        left: 65%;
-        top: 35%;
+        left: 75%;
+        top: 55%;
+    }
+
+    .flip-text {
+        bottom: -10%;
+    }
+}
+
+@media only screen and (max-width: 870px) {
+    .about-titles {
+        margin: 2rem 0 0 3.5rem;
     }
 }
 
@@ -205,13 +256,18 @@
         width: 180px;
     }
 
-    .about-text p {
-        font-size: 20px;
-        line-height: 27px;
+    .about-text li {
+        font-size: 17px;
+        line-height: 24px;
     }
 
     .purpleSphere{
-        left: 68%;
-        top: 50%;
+        left: 58%;
+        top: 60%;
+    }
+
+    .blueSphere{
+        left: 5%;
+        top: -22%;
     }
 }

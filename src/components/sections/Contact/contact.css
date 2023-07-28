@@ -102,7 +102,7 @@
     cursor: pointer;
 }
 
-.span-msg{
+.span-msg {
     margin-top: 1rem;
     color: rgba(255, 255, 255, 0.856);
 }
@@ -110,7 +110,8 @@
 .form-gradient {
     position: absolute;
     border-radius: 16px;
-    background: linear-gradient(135deg, #3f50b1ea 0%, #5955aee8 13%, #7b5face8 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271e0 75%, #f3a569da 87%, #f7c978e1 100%);    background-size:  400% 400%;
+    background: linear-gradient(135deg, #3f50b1ea 0%, #5955aee8 13%, #7b5face8 25%, #8f6aae 38%, #a86aa4 50%, #cc6b8e 62%, #f18271e0 75%, #f3a569da 87%, #f7c978e1 100%);
+    background-size: 400% 400%;
     width: 100%;
     height: 100%;
     background-size: 400% 400%;
@@ -122,12 +123,34 @@
 
 @keyframes gradient {
     0% {
-      background-position: 0%;
+        background-position: 0%;
     }
+
     50% {
-      background-position: 100%;
+        background-position: 100%;
     }
+
     100% {
-      background-position: 0%;
+        background-position: 0%;
     }
-  }
+}
+
+@media only screen and (max-width: 870px) {
+    .contact-container {
+        padding: 3.5rem;
+    }
+}
+
+@media only screen and (max-width: 735px) {
+    .form-names {
+        flex-direction: column;
+    }
+
+    .form-names input {
+        width: 100%;
+    }
+
+    .contact-form {
+        width: 100%;
+    }
+}

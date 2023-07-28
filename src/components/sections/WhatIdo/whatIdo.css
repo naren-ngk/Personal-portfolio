@@ -30,6 +30,7 @@
     justify-content: center;
     align-items: center;
     flex: 1;
+    overflow: hidden;
 }
 
 .lottie-title-icon {
@@ -71,7 +72,8 @@
 }
 
 .even-h2, .h2-0, .h2-2, .h2-4 {
-    background: linear-gradient(-225deg, #14e0ff 0%, #1D8FE1 48%, #625EB1 100%);}
+    background: linear-gradient(-225deg, #14e0ff 0%, #1D8FE1 48%, #625EB1 100%);
+}
 
 .odd-h2, .h2-1, .h2-3 {
     background: linear-gradient(270deg, #A5FA50 0%, #65E7A1 53.5%, #1EEED5 100%);
@@ -121,6 +123,7 @@
     .what-heading {
         font-size: 45px;
     }
+
     .icon-blob {
         height: 600px;
     }
@@ -154,6 +157,7 @@
     .what-wrapper {
         flex-direction: column;
     }
+
     .what-single-title {
         font-size: 50px;
     }
@@ -172,6 +176,7 @@
         height: 600px;
         width: 600px;
     }
+
     .what-titles {
         margin: 0;
     }

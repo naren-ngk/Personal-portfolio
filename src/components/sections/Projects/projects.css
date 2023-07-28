@@ -33,7 +33,7 @@
     flex-wrap: wrap;
 }
 
-.gitButton{
+.gitButton {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,7 +41,7 @@
 }
 
 .gitButton button {
-    background: linear-gradient(to right,  #65E7A1 0%, #1EEED5 53.5%, #A5FA50 100%);
+    background: linear-gradient(to right, #65E7A1 0%, #1EEED5 53.5%, #A5FA50 100%);
     padding: 1rem 2.5rem;
     outline: none;
     border: none;
