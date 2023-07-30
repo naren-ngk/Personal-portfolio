@@ -210,13 +210,11 @@
     }
 
     .about-description {
-        display: flex;
         margin-top: 3.5rem;
     }
 
     .about-text {
         align-self: center;
-        width: 550px;
     }
 
     .about-text li {
@@ -251,14 +249,13 @@
 }
 
 @media only screen and (max-width: 660px) {
-    .sphere {
-        height: 180px;
-        width: 180px;
-    }
-
     .about-text li {
         font-size: 17px;
         line-height: 24px;
+    }
+
+    .about-description {
+        margin-top: 5rem;
     }
 
     .purpleSphere{
@@ -269,5 +266,67 @@
     .blueSphere{
         left: 5%;
         top: -22%;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .sphere {
+        height: 160px;
+        width: 160px;
+    }
+
+    .about-text li {
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .purpleSphere{
+        left: 58%;
+        top: 60%;
+    }
+
+    .blueSphere{
+        left: 5%;
+        top: -22%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .sphere {
+        height: 150px;
+        width: 150px;
+    }
+
+    .about-text li {
+        font-size: 12px;
+        line-height: 17px;
+    }
+
+    .purpleSphere{
+        left: 58%;
+        top: 55%;
+    }
+
+    .blueSphere{
+        left: -10%;
+        top: -22%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .about-text li {
+        font-size: 10px;
+        line-height: 15px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .sphere {
+        height: 130px;
+        width: 130px;
+    }
+    .about-text li {
+        font-size: 8px;
+        line-height: 13px;
     }
 }

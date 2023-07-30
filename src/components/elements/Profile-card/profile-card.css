@@ -86,16 +86,16 @@
 }
 
 @media only screen and (max-width: 1200px) {
-
-    .card-front,
-    .card-back {
-        width: 300px;
+    .flippable-card-container {
         height: 300px;
+        width: 300px;
+    }
+
+    .card-front {
         background-size: 300px;
     }
 
     .qrImage {
-        position: absolute;
         width: 240px;
         height: 240px;
     }
@@ -114,18 +114,18 @@
 }
 
 @media only screen and (max-width: 930px) {
-
-    .card-front,
-    .card-back {
-        width: 350px;
+    .flippable-card-container {
         height: 350px;
+        width: 350px;
+    }
+
+    .card-front {
         background-size: 350px;
     }
 
     .qrImage {
-        position: absolute;
-        width: 270px;
-        height: 270px;
+        width: 240px;
+        height: 240px;
     }
 
     .flip-text {
@@ -138,6 +138,68 @@
     .transform-flip {
         transform: rotateY(180deg);
         left: 33%;
+    }
+}
+
+@media only screen and (max-width: 660px) {
+    .flippable-card-container {
+        height: 300px;
+        width: 300px;
+    }
+
+    .card-front {
+        background-size: 300px;
+    }
+
+    .qrImage {
+        width: 250px;
+        height: 250px;
+    }
+
+    .flip-text {
+        width: auto;
+        bottom: 23%;
+        font-size: 15px;
+        left: 32.5%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .flippable-card-container {
+        height: 250px;
+        width: 250px;
+    }
+
+    .card-front {
+        background-size: 250px;
+    }
+
+    .qrImage {
+        width: 220px;
+        height: 220px;
+    }
+
+    .flip-text {
+        width: auto;
+        bottom: 23%;
+        font-size: 12px;
+        left: 32%;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .flippable-card-container {
+        height: 200px;
+        width: 200px;
+    }
+
+    .card-front {
+        background-size: 200px;
+    }
+
+    .qrImage {
+        width: 170px;
+        height: 170px;
     }
 }
 
