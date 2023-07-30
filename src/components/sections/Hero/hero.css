@@ -163,6 +163,7 @@
     .cursor {
         font-size: 40px;
     }
+
     .laptop-lottie {
         height: 500px;
         width: 500px;
@@ -170,9 +171,10 @@
 }
 
 @media only screen and (max-width: 1090px) {
-    .hero-container{
+    .hero-container {
         margin: 0 3rem;
     }
+
     .titles h2 {
         font-size: 30px;
     }
@@ -243,7 +245,7 @@
         font-size: 22px;
     }
 
-    .pictures{
+    .pictures {
         display: flex;
         justify-content: flex-start;
         align-items: flex-start;
@@ -255,7 +257,7 @@
         width: 500px;
     }
 
-    .slider-container{
+    .slider-container {
         bottom: 3%;
     }
 }
@@ -291,4 +293,136 @@
         padding: 15px;
         font-size: 18px;
     }
-} 
+}
+
+@media only screen and (max-width: 520px) {
+    .titles h2 {
+        font-size: 35px;
+    }
+
+    .titles h4 {
+        font-size: 20px;
+    }
+
+    .name {
+        font-size: 50px;
+    }
+
+    .typewriting {
+        font-size: 30px;
+    }
+
+    .cursor {
+        font-size: 35px;
+    }
+
+    .laptop-lottie {
+        height: 430px;
+        width: 430px;
+    }
+
+    .resume-button {
+        width: 100px;
+        padding: 14px;
+        font-size: 16px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .name {
+        font-size: 45px;
+    }
+
+    .titles h2 {
+        font-size: 30px;
+    }
+
+    .laptop-lottie {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .laptop-lottie {
+        height: 380px;
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 431px) {
+    .name {
+        font-size: 40px;
+    }
+
+    .titles h2 {
+        font-size: 25px;
+    }
+
+    .typewriting {
+        font-size: 25px;
+    }
+
+    .cursor {
+        font-size: 30px;
+    }
+
+    .titles h4 {
+        font-size: 17px;
+        line-height: 25px;
+    }
+
+    .laptop-lottie {
+        height: 320px;
+        width: 320px;
+    }
+
+    .resume-button {
+        width: 90px;
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    .slider {
+        width: 20px;
+        height: 35px;
+    }
+    
+    .slider-ball {
+        width: 6px;
+        height: 6px;
+        margin: 1px 0;
+    }
+    
+    .swipe-text {
+        font-size: 11px;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    .name {
+        font-size: 35px;
+    }
+
+    .titles h2 {
+        font-size: 20px;
+    }
+
+    .typewriting {
+        font-size: 22px;
+    }
+
+    .cursor {
+        font-size: 27px;
+    }
+
+    .titles h4 {
+        font-size: 14px;
+        line-height: 21px;
+    }
+
+    .laptop-lottie {
+        height: 280px;
+        width: 280px;
+    }
+}

@@ -31,3 +31,38 @@
         width: 450px;
     }
 }
+
+@media only screen and (max-width: 520px) {
+    .blob {
+        height: 430px;
+        width: 430px;
+    }
+}
+
+@media only screen and (max-width: 476px) {
+    .blob {
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media only screen and (max-width: 445px) {
+    .blob {
+        height: 380px;
+        width: 380px;
+    }
+}
+
+@media only screen and (max-width: 431px) {
+    .blob {
+        height: 320px;
+        width: 320px;
+    }
+}
+
+@media only screen and (max-width: 387px) {
+    .blob {
+        height: 280px;
+        width: 280px;
+    }
+}
