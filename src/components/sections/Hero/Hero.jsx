@@ -7,6 +7,8 @@ import { textVariant } from '../../../utils/motions';
 import './hero.css';
 
 function Hero() {
+    const resumeLink = 'https://drive.google.com/file/d/1mNlNqhaJg7wtyAt-Nztj68N1eXvO47Q3/view?usp=sharing';
+    
     return (
         <div>
             <div className='hero-container'>
@@ -43,6 +45,7 @@ function Hero() {
                             className='resume-button'
                             whileHover={{ scale: 1.1, backgroundColor: '#238b99' }}
                             whileTap={{ scale: 0.8 }}
+                            onClick={() => window.open(resumeLink, '_blank')}
                         >Resume</motion.button>
                     </div>
                 </motion.div>

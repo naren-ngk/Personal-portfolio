@@ -72,3 +72,22 @@
         font-size: 22px;
     }
 }
+
+@media only screen and (max-width: 550px) {
+    .project-title h2 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    .project-title h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .gitButton button {
+        padding: 0.75rem 1.5rem;
+        font-size: 20px;
+    }
+}

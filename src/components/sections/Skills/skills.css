@@ -158,4 +158,97 @@
     .progerss-container span {
         font-size: 30px;
     }
+
+    .progress-bar {
+        height: 35px;
+    }
+
+    .progress-value {
+        height: 25px;
+    }
+
+    .progress-wrapper h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 637px) {
+    .progerss-container h3 {
+        font-size: 20px;
+        padding-left: 0;
+    }
+    .progerss-container span {
+        font-size: 27px;
+    }
+}
+
+@media only screen and (max-width: 578px) {
+    .progerss-container h3 {
+        font-size: 18px;
+    }
+    .progerss-container span {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    .skills-title h2 {
+        font-size: 45px;
+    }
+
+    .progerss-container h3 {
+        font-size: 15px;
+    }
+    .progerss-container span {
+        font-size: 22px;
+    }
+
+    .dragger {
+        font-size: 10px;
+    }
+}
+
+@media only screen and (max-width: 455px) {
+    .skills-title h2 {
+        font-size: 40px;
+        line-height: 45px;
+    }
+
+    .skills-title {
+        margin-left: 1rem;
+    }
+
+    .skills-section {
+        padding: 2rem;
+    }
+
+    .progress-bar {
+        height: 30px;
+    }
+
+    .progress-value {
+        height: 20px;
+    }
+
+    .progress-wrapper h2 {
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 406px) {
+    .progerss-container h3 {
+        font-size: 13px;
+    }
+    .progerss-container span {
+        font-size: 19px;
+    }
+}
+
+@media only screen and (max-width: 365px) {
+    .progerss-container h3 {
+        font-size: 11px;
+    }
+    .progerss-container span {
+        font-size: 17px;
+    }
 }
