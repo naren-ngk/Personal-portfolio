@@ -37,7 +37,7 @@ function Navbar() {
             </h3>
             <nav ref={navRef}>
                 {navLinks.map((link) => (
-                    <a href={`#${link.id}`}>{link.title}</a>
+                    <a href={`#${link.id}`} onClick={showNavBar}>{link.title}</a>
                 ))}
                 <button onClick={showNavBar} className='nav-btn nav-close'>
                     <FaTimes />

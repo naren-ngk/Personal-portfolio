@@ -4,10 +4,12 @@
     font-family: 'Titillium Web', sans-serif;
     display: flex;
     flex-direction: column;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .about-titles {
-    margin: 2rem 0 0 5rem;
+    margin: 2rem 0 3rem 5rem;
     color: white;
 }
 

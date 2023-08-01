@@ -89,7 +89,7 @@ header .nav-btn {
         align-items: center;
         gap: 1.5rem;
         background: rgb(52, 30, 92);
-        transition: 1s;
+        transition: 0.5s;
     }
 
     header .responsive-nav {
